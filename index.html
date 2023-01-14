@@ -25,52 +25,54 @@
     <link rel="stylesheet" href="imports/default.min.css">
 </head>
 <body>
-    <main>
-        <h1>Pre-Entrega 1 de Matias Baldanza
-            <span>Curso de Javascript, Comisión 34150 (CoderHouse 2023)</span>
-        </h1>
-    </main>
-    <section>
-        <div class="description">
+    <div class="container">
+        <main>
+            <h1>Pre-Entrega 1 de Matias Baldanza
+                <span>Curso de Javascript, Comisión 34150 (CoderHouse 2023)</span>
+            </h1>
+        </main>
+        <section>
             <h3>1. Función implementada con un condicional</h3>
-            <p>
-                Escribí una función recursiva <code>esPotenciade(numero, exponente)</code> que utiliza una estructura <code>if-else-if</code> para ejecutar el <em>caso base</em> y las dos posibilidades.
-            </p>
-            <p>
-                Recibe un <code>numero</code> y un <code>exponente</code> numéricos.
-            </p>
-            <p>
-                Devuelve un <code>boolean</code> (<code>true</code> si <code>numero</code> es potencia de <code>exponente</code> o <code>false</code> si no lo es).</p>
-            </p>
-        </div>
-        <div class="reveal">
-            <details open>
-                <summary>Código</summary>
-                <pre>
-                    <code class="language-javascript">
-function esPotenciaDe(numero, potencia) {
-    // caso base
-    if (numero === 1) {
-        return true;
-    } else if ( numero % potencia === 0) {
-        return esPotenciaDe(numero / potencia, potencia);
-    } else {
-        return false;
-    }
-}
-                    </code>
-                </pre>
-            </details>
-            <details open>
-                <summary>
-                    <button onclick="">Correr Tests</button>
-                </summary>
-                <pre class="tests-output"></pre>
-            </details>
-        </div>
+            <div class="description">
+                <p>
+                    Escribí una función recursiva <code>esPotenciade(numero, exponente)</code> que utiliza una estructura <code>if-else-if</code> para ejecutar el <em>caso base</em> y las dos posibilidades.
+                </p>
+                <p>
+                    Recibe un <code>numero</code> y un <code>exponente</code> numéricos.
+                </p>
+                <p>
+                    Devuelve un <code>boolean</code> (<code>true</code> si <code>numero</code> es potencia de <code>exponente</code> o <code>false</code> si no lo es).</p>
+                </p>
+            </div>
+            <div class="reveal">
+                <details open>
+                    <summary>Código</summary>
+                    <pre>
+                        <code class="language-javascript">
+        function esPotenciaDe(numero, potencia) {
+        // caso base
+        if (numero === 1) {
+            return true;
+        } else if ( numero % potencia === 0) {
+            return esPotenciaDe(numero / potencia, potencia);
+        } else {
+            return false;
+        }
+        }
+                        </code>
+                    </pre>
+                </details>
+                <details open>
+                    <summary class="button" onclick="console.log('clicked');">
+                        Correr Tests
+                    </summary>
+                    <pre class="tests-output"></pre>
+                </details>
+            </div>
         
         
-    </section>
+        </section>
+    </div>
     
     
     
@@ -78,6 +80,6 @@ function esPotenciaDe(numero, potencia) {
     <script src="imports/highlight.min.js"></script>
     <script>
         hljs.highlightAll();
-        </script>
+    </script>
 </body>
 </html>
