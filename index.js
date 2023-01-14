@@ -11,13 +11,14 @@
 
 */
 
-import { displayTests } from "./testsUtils.js";
+import { formatTests } from "./testsUtils.js";
 import { esPotenciaDe } from "./condicional.js";
 import { tests_esPotenciaDe } from "./condicional.tests.js";
 
-const testsOutput = document.querySelector('.tests-output');
+const testsOutputElement = document.querySelector('.tests-output');
 const testsButton = document.querySelector('[tests-button]');
 
+
 testsButton.addEventListener("click", () => {
-    displayTests(tests_esPotenciaDe, testsOutput);
+    testsOutputElement.innerHTML = formatTests(tests_esPotenciaDe);
 })

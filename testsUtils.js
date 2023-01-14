@@ -14,13 +14,13 @@
 
 export function assert(outcome, description) {
     var passFail = outcome ? 'pass' : 'fail';
-    return { outcome: outcome, output: `${passFail}: ${description}` }
+    return `${passFail}: ${description}`;
 }
 
-export function displayTests(tests, htmlElement) {
-    let output = ``;
+export function formatTests(tests) {
+    let formattedOutput = ``;
     tests.forEach(testResult => {
-        output += `${testResult.output}\n`;
+        formattedOutput += `${testResult}\n`;
     });
-    console.log(output);
+    return formattedOutput;
 }

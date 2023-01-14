@@ -12,3 +12,4 @@ export const tests_esPotenciaDe = [
     assert( esPotenciaDe(-4, 2)     === false , 'esPotenciaDe(-4, 2)    debería ser FALSE')   
 ];
 
+
