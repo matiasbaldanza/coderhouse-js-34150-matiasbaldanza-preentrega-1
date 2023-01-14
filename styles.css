@@ -1,0 +1,61 @@
+/* 
+    Proyecto:   Pre-entrega 1 
+                Matías Baldanza - matiasbaldanza@gmail.com
+                Twitter: @matiasbaldanza
+    Curso:      Javascript
+    Comisión:   #34150 - CoderHouse
+    Profesor:   Gonzalo Ledesma
+
+    Repo:       https://github.com/matiasbaldanza/coderhouse-js-34150-matiasbaldanza-preentrega-1/
+    Sitio:      https://matiasbaldanza.github.io/coderhouse-js-34150-matiasbaldanza-preentrega-1/
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+    --color-text: #222222;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-text);
+    padding: 2rem;
+}
+
+p {
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 125%;
+    margin-bottom: 0.5rem;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 2.4rem;
+}
+
+h1 > span {
+    display: inline-block;
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+code {
+    font-family:'Courier New', Courier, monospace;
+}
