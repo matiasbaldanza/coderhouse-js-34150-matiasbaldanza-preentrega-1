@@ -1,5 +1,4 @@
 /* 
-
     Proyecto:   Pre-entrega 1 
                 Matías Baldanza - matiasbaldanza@gmail.com
                 Twitter: @matiasbaldanza
@@ -12,9 +11,13 @@
 
 */
 
-export function assert(outcome, description) {
-    var passFail = outcome ? 'pass' : 'fail';
-    console.log(`${passFail}: ${description}`);
-    return outcome
-}
+import { displayTests } from "./testsUtils.js";
+import { esPotenciaDe } from "./condicional.js";
+import { tests_esPotenciaDe } from "./condicional.tests.js";
 
+const testsOutput = document.querySelector('.tests-output');
+const testsButton = document.querySelector('[tests-button]');
+
+testsButton.addEventListener("click", () => {
+    displayTests(tests_esPotenciaDe, testsOutput);
+})
