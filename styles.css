@@ -15,7 +15,13 @@
 :root {
     --color-text: #222222;
     --color-light: #EEEEEE;
-    --color-blue: #00AAFF;
+    --color-white: #FFFFFF;
+    --color-bg-subheadings: #F3F3F3;
+    --color-headings: #003F5E;
+    --color-nav: #1C485EEF;
+    --color-primary: #00AAFF;
+    --color-primary-lighter: #4ABEF7;
+
     --color-green: #00FF6C;
     --gradient-blue-green: linear-gradient(to right, #00AAFF, #00FF6C);
 
@@ -31,6 +37,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -38,6 +45,7 @@ body {
     color: var(--color-text);
     padding: 2rem;
     font-size: 1.6rem;
+    background-color: var(--color-white);
 }
 
 .container {
@@ -59,6 +67,7 @@ h1 {
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 2.4rem;
+    color: var(--color-headings);
 }
 
 h1 > span {
@@ -66,6 +75,7 @@ h1 > span {
     font-weight: 300;
     font-size: 2rem;
     margin-top: 0.5rem;
+    color: var(--color-text);
 }
 
 h3 {
@@ -79,6 +89,15 @@ code {
     font-family:'Courier New', Courier, monospace;
     font-weight: bold;
 }
+
+.table-of-contents {
+    border: none;
+    padding: 1rem;    
+    margin-left: 2rem;
+    font-size: 2rem;
+    line-height: 125%;
+}
+
 
 section {
     border: 1px solid var(--color-text);
@@ -99,11 +118,14 @@ details {
     padding: 1rem;
     border: none;
     border-radius: 0.5rem;
-    background: var(--color-blue);
-    color: var(--color-light);
     display: inline-block;
     font-weight: 500;
     box-shadow: var(--shadow);
+}
+
+.btn-action {
+    background: var(--color-primary);
+    color: var(--color-light);
 }
 
 .button:active {
@@ -114,3 +136,27 @@ details {
 pre {
     overflow: scroll;
 }
+
+/* NAVIGATION */
+
+.links {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+.btn-nav {
+    background: var(--color-nav);
+    color: var(--color-light);
+    text-decoration: none;
+}
+
+.table-of-contents a {
+    text-decoration: none;
+    color: var(--color-text)
+}
+
+.table-of-contents a:hover, .table-of-contents a:focus {
+    text-decoration: underline;
+}
+

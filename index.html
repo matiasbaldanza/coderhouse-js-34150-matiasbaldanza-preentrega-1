@@ -16,7 +16,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pre-Entrega 1 de Matias Baldanza — Curso de Javascript, Comisión 34150, CoderHouse 2023</title>
+    <title>Pre-Entrega 1 de Matias Baldanza — Curso de Javascript, Comisión #34150, CoderHouse, 2023</title>
 
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="assets/favicon-matiasbaldanza-16x16.png">
@@ -26,11 +26,22 @@
 </head>
 <body>
     <div class="container">
-        <main>
+        <nav>
             <h1>Pre-Entrega 1 de Matias Baldanza
-                <span>Curso de Javascript, Comisión 34150 (CoderHouse 2023)</span>
+                <span>Curso de Javascript, Comisión #34150 (CoderHouse, 2023)</span>
             </h1>
-        </main>
+            <div class="links">
+                <a class="button btn-nav" target="_blank" href="https://github.com/matiasbaldanza/coderhouse-js-34150-matiasbaldanza-preentrega-1">🔗 Enlace al repositorio</a>
+                <a class="button btn-nav" target="_blank" href="https://github.com/matiasbaldanza/coderhouse-js-34150-matiasbaldanza-preentrega-1#readme">📄 README.md</a>
+            </div>
+        </nav>
+        <section class="table-of-contents">
+            <ol tabindex="0">
+                <li><a href="#section-1">Función implementada con un condicional</a></li>
+                <li><a href="#section-2">Función implementada con un ciclo</a></li>
+                <li><a href="#section-2">Simulador de cuotas con interés</a></li>
+            </ol>
+        </section>
         <section id="section-1">
             <h3>1. Función implementada con un condicional</h3>
             <div class="description">
@@ -64,7 +75,7 @@ function esPotenciaDe(numero, potencia) {
 
             <!-- Show test cases -->
             <details>
-                <summary tests-button class="button">
+                <summary tests-button class="button btn-action">
                     Correr Tests
                 </summary>
                 <pre><code class="tests-output"></code></pre>
@@ -72,7 +83,7 @@ function esPotenciaDe(numero, potencia) {
 
             <!-- Show form -->
             <details>
-                <summary tests-button class="button">
+                <summary tests-button class="button btn-action">
                     Formulario de prueba
                 </summary>
                 <form action="submit" class="test-form">
